@@ -1,0 +1,395 @@
+{
+ "version": "0.1.0",
+ "target": "DM Ori",
+ "ra": 85.9125,
+ "dec": -5.067453,
+ "stage": "done",
+ "data": {
+  "asassn": {
+   "client": "installed skypatrol",
+   "fetch": {
+    "radius_arcsec": 10.0,
+    "candidates": [
+     {
+      "asas_sn_id": "249109296903",
+      "sep_arcsec": 0.15729430365639382
+     }
+    ],
+    "tried": [
+     {
+      "rank": 0,
+      "asas_sn_id": "249109296903",
+      "sep_arcsec": 0.15729430365639382,
+      "n_cone": 1338
+     }
+    ],
+    "asas_sn_id": "249109296903",
+    "sep_arcsec": 0.15729430365639382,
+    "chosen_rank": 0,
+    "columns": [
+     "asas_sn_id",
+     "jd",
+     "flux",
+     "flux_err",
+     "mag",
+     "mag_err",
+     "limit",
+     "fwhm",
+     "image_id",
+     "camera",
+     "quality",
+     "phot_filter"
+    ],
+    "n_rows": 1338,
+    "status": "ok"
+   },
+   "load": {
+    "band_source": "phot_filter",
+    "n_total": 1338,
+    "n_bad_quality": 208
+   },
+   "n_clean": {
+    "g": 826,
+    "V": 303
+   },
+   "references": {
+    "g": {
+     "n_ref": 816,
+     "used": true,
+     "band_ref_flux": 59.58039448922359,
+     "cameras": {
+      "bB": {
+       "ref": "own",
+       "n": 95,
+       "flux": 59.52380162052956
+      },
+      "bF": {
+       "ref": "own",
+       "n": 191,
+       "flux": 59.59719875718531
+      },
+      "bj": {
+       "ref": "own",
+       "n": 260,
+       "flux": 60.052908065531625
+      },
+      "bn": {
+       "ref": "own",
+       "n": 115,
+       "flux": 57.597651461301126
+      },
+      "br": {
+       "ref": "own",
+       "n": 155,
+       "flux": 60.909390033868426
+      }
+     }
+    },
+    "V": {
+     "n_ref": 273,
+     "used": true,
+     "band_ref_flux": 71.25733287090858,
+     "cameras": {
+      "ba": {
+       "ref": "band",
+       "n_own": 0,
+       "flux": 71.25733287090858
+      },
+      "bb": {
+       "ref": "own",
+       "n": 129,
+       "flux": 69.66672024884696
+      },
+      "bf": {
+       "ref": "own",
+       "n": 144,
+       "flux": 73.24061204736745
+      }
+     }
+    }
+   },
+   "n_normalised": 1129,
+   "first": "2012-01-29",
+   "last": "2025-02-06"
+  },
+  "ztf": {
+   "url": "https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves?POS=CIRCLE%2085.912500%20-5.067453%200.000600&BANDNAME=g,r,i&FORMAT=csv",
+   "status": "ok",
+   "n_bins": 0,
+   "n_rows": 0,
+   "n_clean": 0
+  },
+  "tess": {
+   "sectors": {
+    "6": {
+     "sector": 6,
+     "t_mid": 2458479.766096484,
+     "date": "2018-12-27",
+     "median_f3": 6436.102386474609,
+     "median_f1": 1778.1321868896484,
+     "n": 981,
+     "frac_aperture_in_peak": 0.27637298318703873,
+     "ratio_f3": 1.0,
+     "ratio_f1": 1.0
+    },
+    "98": {
+     "sector": 98,
+     "t_mid": 2461017.232282264,
+     "date": "2025-12-07",
+     "median_f3": 4884.5571365356445,
+     "median_f1": 1350.6843795776367,
+     "n": 24068,
+     "frac_aperture_in_peak": 0.278167218815162,
+     "ratio_f3": 0.7589309248405497,
+     "ratio_f1": 0.7596085316583163
+    },
+    "110": {
+     "sector": 110,
+     "t_mid": 2461352.7807822465,
+     "date": "2026-11-08",
+     "median_f3": 7112.928375244141,
+     "median_f1": 2193.3660430908203,
+     "n": 4525,
+     "frac_aperture_in_peak": 0.3085655510207762,
+     "ratio_f3": 1.1051608486204123,
+     "ratio_f1": 1.2335224902078337
+    }
+   },
+   "sector_list": [
+    6,
+    98,
+    110
+   ],
+   "reference_sectors": [
+    6
+   ]
+  }
+ },
+ "preregistration": "PREREGISTRATION.md (2026-11-24)",
+ "constants": {
+  "T2_START": 2456320.5,
+  "T2_END": 2456901.5,
+  "T2_CENTER": 2456611.0,
+  "PRED": 2461222.5,
+  "DIM_R": 0.5011872336272722,
+  "BRIGHT_R": 0.7585775750291838,
+  "REF_WINDOWS": {
+   "V": [
+    2456992.5,
+    2458484.5
+   ],
+   "g": [
+    2458088.5,
+    2460676.5
+   ]
+  }
+ },
+ "bracket_core": {
+  "label": "BRACKET_UNDETERMINED",
+  "info": {
+   "date_lo": "2026-02-21",
+   "date_hi": "2026-06-01",
+   "n_bins": 0,
+   "n_dim": 0,
+   "n_bright": 0,
+   "dmag": []
+  },
+  "P_ingress_days": [
+   4452.0,
+   4692.0
+  ]
+ },
+ "n_bins": 100,
+ "n_bins_by_state": {
+  "DIM": 7,
+  "MID": 12,
+  "BRIGHT": 81
+ },
+ "episodes": [
+  {
+   "t_start": 2456540.5,
+   "t_end": 2456570.5,
+   "date_start": "2013-09-05",
+   "date_end": "2013-10-05",
+   "n_bins": 1,
+   "n_dim": 1,
+   "n_mid": 0,
+   "min_r": 0.3253637118667051,
+   "max_dmag": 1.2190772149673628,
+   "first_dim": 2456540.5,
+   "qualifies": false
+  },
+  {
+   "t_start": 2457050.5,
+   "t_end": 2457080.5,
+   "date_start": "2015-01-28",
+   "date_end": "2015-02-27",
+   "n_bins": 1,
+   "n_dim": 0,
+   "n_mid": 1,
+   "min_r": 0.5712599828296377,
+   "max_dmag": 0.607915493782504,
+   "first_dim": null,
+   "qualifies": false
+  },
+  {
+   "t_start": 2457290.5,
+   "t_end": 2457350.5,
+   "date_start": "2015-09-25",
+   "date_end": "2015-11-24",
+   "n_bins": 2,
+   "n_dim": 1,
+   "n_mid": 1,
+   "min_r": 0.496150518146522,
+   "max_dmag": 0.7609663769001752,
+   "first_dim": 2457320.5,
+   "qualifies": false
+  },
+  {
+   "t_start": 2457440.5,
+   "t_end": 2457500.5,
+   "date_start": "2016-02-22",
+   "date_end": "2016-04-22",
+   "n_bins": 2,
+   "n_dim": 1,
+   "n_mid": 1,
+   "min_r": 0.39708139554518546,
+   "max_dmag": 1.0028011511475423,
+   "first_dim": 2457470.5,
+   "qualifies": false
+  },
+  {
+   "t_start": 2457620.5,
+   "t_end": 2457650.5,
+   "date_start": "2016-08-20",
+   "date_end": "2016-09-19",
+   "n_bins": 1,
+   "n_dim": 0,
+   "n_mid": 1,
+   "min_r": 0.7535953035699628,
+   "max_dmag": 0.30715454185962127,
+   "first_dim": null,
+   "qualifies": false
+  },
+  {
+   "t_start": 2458040.5,
+   "t_end": 2458100.5,
+   "date_start": "2017-10-14",
+   "date_end": "2017-12-13",
+   "n_bins": 2,
+   "n_dim": 0,
+   "n_mid": 2,
+   "min_r": 0.6435185161199789,
+   "max_dmag": 0.4785973812888749,
+   "first_dim": null,
+   "qualifies": false
+  },
+  {
+   "t_start": 2458400.5,
+   "t_end": 2458430.5,
+   "date_start": "2018-10-09",
+   "date_end": "2018-11-08",
+   "n_bins": 1,
+   "n_dim": 1,
+   "n_mid": 0,
+   "min_r": 0.49944873800611184,
+   "max_dmag": 0.7537726997438116,
+   "first_dim": 2458400.5,
+   "qualifies": false
+  },
+  {
+   "t_start": 2458460.5,
+   "t_end": 2458550.5,
+   "date_start": "2018-12-08",
+   "date_end": "2019-03-08",
+   "n_bins": 3,
+   "n_dim": 1,
+   "n_mid": 2,
+   "min_r": 0.34817702746664986,
+   "max_dmag": 1.1454997169754633,
+   "first_dim": 2458490.5,
+   "qualifies": false
+  },
+  {
+   "t_start": 2458700.5,
+   "t_end": 2458820.5,
+   "date_start": "2019-08-05",
+   "date_end": "2019-12-03",
+   "n_bins": 4,
+   "n_dim": 1,
+   "n_mid": 3,
+   "min_r": 0.3638640933798053,
+   "max_dmag": 1.097651997723133,
+   "first_dim": 2458730.5,
+   "qualifies": false
+  },
+  {
+   "t_start": 2460050.5,
+   "t_end": 2460080.5,
+   "date_start": "2023-04-16",
+   "date_end": "2023-05-16",
+   "n_bins": 1,
+   "n_dim": 0,
+   "n_mid": 1,
+   "min_r": 0.634380588958802,
+   "max_dmag": 0.4941252855259934,
+   "first_dim": null,
+   "qualifies": false
+  },
+  {
+   "t_start": 2460530.5,
+   "t_end": 2460560.5,
+   "date_start": "2024-08-08",
+   "date_end": "2024-09-07",
+   "n_bins": 1,
+   "n_dim": 1,
+   "n_mid": 0,
+   "min_r": 0.37247723674065436,
+   "max_dmag": 1.072250658027468,
+   "first_dim": 2460530.5,
+   "qualifies": false
+  }
+ ],
+ "control": {
+  "verdict": "FAIL",
+  "episodes": []
+ },
+ "main": {
+  "label": "INCONCLUSIVE_COVERAGE",
+  "info": {
+   "n_post_episodes": 0,
+   "bright_feb_apr_2026": 0,
+   "bright_from_aug_2026": 0,
+   "bright_from_oct_2025": 0,
+   "dim_bins_from_jul_2025": 0,
+   "shallow_episodes": []
+  }
+ },
+ "period_map": {
+  "excluded_frac_11_5_13_5": 0.009950248756218905,
+  "supported_frac_11_5_13_5": 0.0,
+  "excluded_runs": [
+   [
+    11.0,
+    11.26
+   ],
+   [
+    11.35,
+    11.51
+   ]
+  ],
+  "supported_runs": [],
+  "open_runs": [
+   [
+    11.27,
+    11.34
+   ],
+   [
+    11.52,
+    14.0
+   ]
+  ]
+ },
+ "outcome": "CONTROL_FAILED_INCONCLUSIVE_COVERAGE",
+ "runtime_s": 72.86646437644958
+}

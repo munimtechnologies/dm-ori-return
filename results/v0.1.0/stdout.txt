@@ -1,0 +1,52 @@
+===== setup-01-pip: pip install -r requirements.txt
+Collecting numpy (from -r requirements.txt (line 1))
+  Downloading numpy-2.5.5-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+Collecting astropy (from -r requirements.txt (line 2))
+  Downloading astropy-8.0.3-cp311-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (11 kB)
+Collecting astropy-iers-data>=0.2026.10.19.0.52.1 (from astropy->-r requirements.txt (line 2))
+  Downloading astropy_iers_data-0.2026.11.23.0.35.53-py3-none-any.whl.metadata (3.2 kB)
+Collecting packaging>=25.0 (from astropy->-r requirements.txt (line 2))
+  Downloading packaging-26.4-py3-none-any.whl.metadata (3.5 kB)
+Collecting pyerfa>=2.0.1.3 (from astropy->-r requirements.txt (line 2))
+  Downloading pyerfa-2.0.1.5-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.7 kB)
+Collecting PyYAML>=6.0.0 (from astropy->-r requirements.txt (line 2))
+  Downloading pyyaml-6.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.3 kB)
+Downloading numpy-2.5.5-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (15.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.7/15.7 MB 6.6 MB/s eta 0:00:00
+Downloading astropy-8.0.3-cp311-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (10.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.4/10.4 MB 9.1 MB/s eta 0:00:00
+Downloading astropy_iers_data-0.2026.11.23.0.35.53-py3-none-any.whl (2.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 8.3 MB/s eta 0:00:00
+Downloading packaging-26.4-py3-none-any.whl (140 kB)
+Downloading pyerfa-2.0.1.5-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (738 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 738.7/738.7 kB 7.2 MB/s eta 0:00:00
+Downloading pyyaml-6.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (849 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 849.2/849.2 kB 6.5 MB/s eta 0:00:00
+Installing collected packages: PyYAML, packaging, numpy, astropy-iers-data, pyerfa, astropy
+Successfully installed PyYAML-6.0.4 astropy-8.0.3 astropy-iers-data-0.2026.11.23.0.35.53 numpy-2.5.5 packaging-26.4 pyerfa-2.0.1.5
+
+===== run-01-python: python -m unittest -v test_dmori
+
+===== run-02-python: python job.py --data-dir /data --out-dir /out
+Welcome to ASAS-SN Skypatrol!
+
+Current Deployment Version: 0.6.20 (11 SEPTEMBER 2025)
+Please upgrade your client if not up to date.
+
+New major release coming for Skypatrol. 
+We are rebuilding our catalogs and lightcurves in full.
+The API will remain the same, but asas_sn_ids will change for some targets.
+
+Kyle Hart 
+03 November 2026
+
+Downloading Curves...
+Pulled 1 of 1
+[   45.4s] ASAS-SN 249109296903 (rank 0, 0.2"): 1338 rows
+[   45.4s] control FAIL; main INCONCLUSIVE_COVERAGE; excluded frac 0.010
+[   51.0s] ZTF: 0 rows, 0 clean, 0 bins
+[   54.8s] TESScut sector 6: tess-s0006-1-1_85.912500_-5.067453_11x11_astrocut.fits
+[   66.0s] TESScut sector 98: tess-s0098-1-2_85.912500_-5.067453_11x11_astrocut.fits
+[   72.8s] TESScut sector 110: tess-s0110-1-2_85.912500_-5.067453_11x11_astrocut.fits
+[   72.9s] TESS sectors: 6 2018-12-27 r3=1.0, 98 2025-12-07 r3=0.7589309248405497, 110 2026-11-08 r3=1.1051608486204123
+[   72.9s] OUTCOME CONTROL_FAILED_INCONCLUSIVE_COVERAGE
